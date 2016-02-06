@@ -33,8 +33,8 @@
             sb.description("Description here.");
 
             // configure the publication and subscription feeds
-            sb.addPublish( "buttonPress", "boolean", "false" );
-            sb.addSubscribe( "submitQuiz", "boolean" );
+            sb.addPublish( "sendQuiz", "boolean", "false" );
+            sb.addSubscribe( "quizResult", "boolean" );
 
             // override Spacebrew events - this is how you catch events coming from Spacebrew
             sb.onBooleanMessage = onBooleanMessage;
@@ -44,8 +44,8 @@
             sb.connect();
 
             // listen to the mouse
-            $("#sendQuiz").on("mousedown", onButtonPress);
-            $("#sendQuiz").on("mouseup", onButtonRelease);
+            $("#submitQuiz").on("mousedown", onButtonPress);
+            $("#submitQuiz").on("mouseup", onButtonRelease);
         }
 
         /**
@@ -112,7 +112,7 @@
         </div>
 
         <div id="buttonBox">
-                <a class="button" id="sendQuiz">Submit</a>
+                <a class="button" id="submitQuiz">Submit</a>
         </div>
 
     </div>
