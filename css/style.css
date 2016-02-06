@@ -1,0 +1,89 @@
+body {
+   padding: 20px;
+   font: 14px/145% "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   background: #eeeeee;
+}
+
+a, a:link, a:visited {
+   text-decoration: none;
+}
+
+h1{
+   text-align: center;
+}
+
+h2 {
+   text-align: center;
+
+}
+#titleBox{
+   position: absolute;
+   padding-top: 20px;
+   width:700px;
+   height:2040px;
+   left: calc(50% - 330px);
+}
+
+ #title {
+
+ }
+
+.questionContainer {
+   position: absolute;
+   padding-top: 20px;
+   width:700px;
+   height:2040px;
+   top: 100px;
+   left: calc(50% - 330px);
+}
+
+
+.question {
+
+}
+
+.answerGrid {
+   position: absolute;
+   width: 660px;
+   height: 2000px;
+   top: 100px;
+   left: calc(50% - 330px);
+   z-index: 0;
+}
+
+.box{
+   display: inline-block;
+   position: relative;
+   width: 300px;
+   height: 125px;
+   margin: 12.5px;
+   text-align: center;
+   padding: 75px 0 0 0;
+   border: solid 1px black;
+}
+
+#buttonBox{
+   margin-top:500px;
+   padding-top: 20px;
+   width:700px;
+   height:25px;
+
+}
+
+.button {
+   position: relative;
+   width:30px;
+   height:20px;
+   padding: 5px;
+   margin-left: calc(50% - 30px);
+   text-align: center;
+   cursor: pointer;
+   border: solid 1px black;
+
+}
+.button:hover {
+   color: blue;
+}
+.button:active {
+
+}
