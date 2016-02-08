@@ -104,7 +104,9 @@
         <h2 class= "question">Pick an Emoji</h2>
         <div class= "answerGrid">
 
-            <div class="box" id = "a1"></div>
+            <div class="box" id = "a1">
+<!--                <img src='http://s18.postimg.org/a9b93b46d/cactus.png' border='0' alt="cactus" /> -->
+            </div>
             <div class="box" id = "a2"></div>
             <div class="box" id = "a3"></div>
             <div class="box" id = "a4"></div>
@@ -116,5 +118,19 @@
         </div>
 
     </div>
+    <script type="text/javascript">
+        var selected = false;
+
+        $(".box").click(function(){
+                selected =! selected;
+    //have to set it to the opposite (true)
+        if(selected){
+            $(this).css({"border" : "solid 2px blue"});
+        }else{
+            $(this).css({"border" : "solid 1px black"});
+            }
+        });
+
+    </script>
 </body>
 </html>

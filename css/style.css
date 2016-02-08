@@ -60,6 +60,19 @@ h2 {
    text-align: center;
    padding: 75px 0 0 0;
    border: solid 1px black;
+   background-color:lightblue;
+}
+.box:hover {
+   border: solid 2px lightgray;
+}
+
+#a1{
+}
+#a2{
+}
+#a3{
+}
+#a1{
 }
 
 #buttonBox{
