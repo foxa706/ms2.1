@@ -123,14 +123,15 @@
         var quizAnswerArray = [];
         var selected = false;
 
-        // var saveAnswer = function(ans){
-        //     quizAnswerArray.push(ans);
-        //     console.log("answered: " + ans);
-        // }
+        var saveAnswer = function(ans){
 
-        // var removeAnswer = function(){
-        //     taskArray.splice(taskNumber, 1);
-        // }
+            quizAnswerArray.push(ans);
+            console.log("answers: " + quizAnswerArray);
+        }
+
+        var removeAnswer = function(){
+            quizAnswerArray.splice(quizAnswerArray, 1);
+        }
 
         $("#a1").click(function(){
             selected =! selected;
@@ -139,12 +140,12 @@
             $(this).css({"border" : "solid 2px blue"});
             var ans = "x";
             console.log("answered: " + ans);
-            // saveAnswer(ans);
+            saveAnswer(ans);
 
         }else{
             $(this).css({"border" : "solid 1px black"});
             console.log("undo");
-            // removeAnswer();
+            removeAnswer();
             }
         });
 
