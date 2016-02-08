@@ -121,7 +121,10 @@
     <script type="text/javascript">
 
         var quizAnswerArray = [];
-        var selected = false;
+        var selected1 = false;
+        var selected2 = false;
+        var selected3 = false;
+        var selected4 = false;
 
         var saveAnswer = function(ans){
 
@@ -130,13 +133,13 @@
         }
 
         var removeAnswer = function(){
-            quizAnswerArray.splice(quizAnswerArray, 1);
+            quizAnswerArray.splice(quizAnswerArray, 2);
         }
 
         $("#a1").click(function(){
-            selected =! selected;
+            selected1 =! selected1;
 
-        if(selected){
+        if(selected1){
             $(this).css({"border" : "solid 2px blue"});
             var ans = "x";
             console.log("answered: " + ans);
@@ -149,6 +152,53 @@
             }
         });
 
+        $("#a2").click(function(){
+            selected2 =! selected2;
+
+        if(selected2){
+            $(this).css({"border" : "solid 2px blue"});
+            var ans = "X";
+            console.log("answered: " + ans);
+            saveAnswer(ans);
+
+        }else{
+            $(this).css({"border" : "solid 1px black"});
+            console.log("undo");
+            removeAnswer();
+            }
+        });
+
+        $("#a3").click(function(){
+            selected3 =! selected3;
+
+        if(selected3){
+            $(this).css({"border" : "solid 2px blue"});
+            var ans = "Y";
+            console.log("answered: " + ans);
+            saveAnswer(ans);
+
+        }else{
+            $(this).css({"border" : "solid 1px black"});
+            console.log("undo");
+            removeAnswer();
+            }
+        });
+
+        $("#a4").click(function(){
+            selected4 =! selected4;
+
+        if(selected4){
+            $(this).css({"border" : "solid 2px blue"});
+            var ans = "y";
+            console.log("answered: " + ans);
+            saveAnswer(ans);
+
+        }else{
+            $(this).css({"border" : "solid 1px black"});
+            console.log("undo");
+            removeAnswer();
+            }
+        });
         $("#submitQuiz").click(function(){
             console.log( 'Quiz submitted' );
         });
