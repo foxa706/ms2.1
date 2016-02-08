@@ -119,16 +119,37 @@
 
     </div>
     <script type="text/javascript">
+
+        var quizAnswerArray = [];
         var selected = false;
 
-        $(".box").click(function(){
-                selected =! selected;
-    //have to set it to the opposite (true)
+        // var saveAnswer = function(ans){
+        //     quizAnswerArray.push(ans);
+        //     console.log("answered: " + ans);
+        // }
+
+        // var removeAnswer = function(){
+        //     taskArray.splice(taskNumber, 1);
+        // }
+
+        $("#a1").click(function(){
+            selected =! selected;
+
         if(selected){
             $(this).css({"border" : "solid 2px blue"});
+            var ans = "x";
+            console.log("answered: " + ans);
+            // saveAnswer(ans);
+
         }else{
             $(this).css({"border" : "solid 1px black"});
+            console.log("undo");
+            // removeAnswer();
             }
+        });
+
+        $("#submitQuiz").click(function(){
+            console.log( 'Quiz submitted' );
         });
 
     </script>
