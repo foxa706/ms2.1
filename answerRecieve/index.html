@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+    <title>Smellfie Answers</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/sb-1.4.1.js"></script>
+    <script type="text/javascript">
+
+        $(window).on("load", setup);
+
+        // Spacebrew Object
+        var sb
+            , app_name = "SmellfieRecieve"
+            ;
+
+        /**
+         * setup Configure spacebrew connection and adds the mousedown listener.
+         */
+        function setup (){
+            var random_id = "0000" + Math.floor(Math.random() * 10000)
+                ;
+
+            app_name = app_name + ' ' + random_id.substring(random_id.length-4);
+
+            // create spacebrew client object
+            sb = new Spacebrew.Client({reconnect:true});
+
+            // set the base description
+            sb.name(app_name);
+            sb.description("Capture Quiz Results.");
+
+            // configure the publication and subscription feeds
+            sb.addPublish( "sendConfirm", "boolean", "false" );
+            sb.addSubscribe( "quizResult", "string" );
+
+            // override Spacebrew events - this is how you catch events coming from Spacebrew
+            sb.onStringMessage = onStringMessage;
+            sb.onOpen = onOpen;
+
+            // connect to spacbrew
+            sb.connect();
+
+        }
+
+        /**
+         * Function that is called when Spacebrew connection is established
+         */
+        function onOpen() {
+            var message = "Connected as <strong>" + sb.name() + "</strong>. ";
+            if (sb.name() === app_name) {
+                message += "<br>You can customize this app's name in the query string by adding <strong>name=your_app_name</strong>."
+            }
+            $("#name").html( message );
+        }
+
+
+
+        /**
+         * onBooleanMessage Function that is called whenever new spacebrew boolean messages are received.
+         *          It accepts two parameters:
+         * @param  {String} name    Holds name of the subscription feed channel
+         * @param  {Boolean} value  Holds value received from the subscription feed
+         */
+        function onStringMessage( string, txt ){
+            console.log("[onStringMessage] string message received ", txt);
+            if (txt) {
+                document.body.style.background = "rgb(100,255,100)";
+                console.log(txt);
+            } else {
+                document.body.style.background = "rgb(255, 255, 255)";
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="titleBox">
+        <h1 id = "title">Smellfie Answers</h1>
+
+</body>
+</html>
