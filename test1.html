@@ -33,7 +33,7 @@
             sb.description("Description here.");
 
             // configure the publication and subscription feeds
-            sb.addPublish( "sendQuiz", "boolean", "false" );
+            sb.addPublish( "sendQuiz", "string", ""  );
             sb.addSubscribe( "quizResult", "boolean" );
 
             // override Spacebrew events - this is how you catch events coming from Spacebrew
@@ -74,7 +74,7 @@
          */
         function onButtonRelease (evt){
             console.log("[onButtonRelease] button has been released");
-            sb.send("sendQuiz", "boolean", "false");
+            sb.send("sendQuiz", "string", "evt");
         }
 
         /**
@@ -84,13 +84,11 @@
          * @param  {Boolean} value  Holds value received from the subscription feed
          */
         function onBooleanMessage( name, value ){
-            console.log("[onBooleanMessage] boolean message received ", value);
+            console.log("[onBooleanMessage] ansewer string received ", value);
             if (value) {
-                document.body.style.background = "rgb(100,255,100)";
-            } else {
-                document.body.style.background = "rgb(220,220,220)";
-            }
+                console.log("Received:" + vaule);
         }
+    }
 
     </script>
 
@@ -200,7 +198,9 @@
             }
         });
         $("#submitQuiz").click(function(){
+            var result = quizAnswerArray;
             console.log( 'Quiz submitted' );
+            onButtonRelease(result);
         });
 
     </script>
