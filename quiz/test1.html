@@ -8,6 +8,17 @@
     <script type="text/javascript" src="js/jq.js"></script>
     <script type="text/javascript" src="js/sb-1.4.1.js"></script>
     <script type="text/javascript">
+
+    // var bodyParser = require('body-parser');
+    // var express = require("express");
+    // var app = express();
+    // var port = 8000;
+    // var url='localhost'
+    // var server = app.listen(port);
+
+    // app.use(express.static(__dirname + '/'));
+    // console.log('Simple static server listening at '+url+':'+port);
+
         $(window).on("load", setup);
         // Spacebrew Object
         var sb
@@ -60,7 +71,7 @@
          * @param  {Event object} evt Holds information about the button press event
          */
         function onButtonRelease (evt){
-            var result = quizAnswerArray[0];
+            var result = quizAnswerArray.toString();
             console.log("[onButtonRelease] button has been released");
             console.log(result);
             sb.send("sendQuiz", "string", result);
@@ -85,24 +96,91 @@
         <h1 id = "title">Smellfie Quiz</h1>
     </div>
 
-    <div class="questionContainer">
-        <h2 class= "question">Pick an Emoji</h2>
-        <div class= "answerGrid">
+    <div class="questionContainer" id = "q1">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid1">
 
-            <div class="box" id = "a1">
+                <div class="box" id = "a1"></div>
 <!--                <img src='http://s18.postimg.org/a9b93b46d/cactus.png' border='0' alt="cactus" /> -->
-            </div>
-            <div class="box" id = "a2"></div>
-            <div class="box" id = "a3"></div>
-            <div class="box" id = "a4"></div>
+                <div class="box" id = "a2"></div>
+                <div class="box" id = "a3"></div>
+                <div class="box" id = "a4"></div>
+    </div>
 
-        </div>
+     <div class="questionContainer" id = "q2">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a5"></div>
+                <div class="box" id = "a6"></div>
+                <div class="box" id = "a7"></div>
+                <div class="box" id = "a8"></div>
+    </div>
+
+     <div class="questionContainer" id = "q3">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a9"></div>
+                <div class="box" id = "a10"></div>
+                <div class="box" id = "a11"></div>
+                <div class="box" id = "a12"></div>
+    </div>
+         <div class="questionContainer" id = "q4">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a13"></div>
+                <div class="box" id = "a14"></div>
+                <div class="box" id = "a15"></div>
+                <div class="box" id = "a16"></div>
+    </div>
+
+         <div class="questionContainer" id = "q5">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a17"></div>
+                <div class="box" id = "a18"></div>
+                <div class="box" id = "a19"></div>
+                <div class="box" id = "a20"></div>
+    </div>
+
+     <div class="questionContainer" id = "q6">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a21"></div>
+                <div class="box" id = "a22"></div>
+                <div class="box" id = "a23"></div>
+                <div class="box" id = "a24"></div>
+    </div>
+
+         <div class="questionContainer" id = "q7">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a25"></div>
+                <div class="box" id = "a26"></div>
+                <div class="box" id = "a27"></div>
+                <div class="box" id = "a28"></div>
+    </div>
+
+    <div class="questionContainer" id = "q8">
+        <h2 class= "question" >Pick an Emoji</h2>
+        <div class= "answerGrid" id="aGrid2">
+
+                <div class="box" id = "a29"></div>
+                <div class="box" id = "a30"></div>
+                <div class="box" id = "a31"></div>
+                <div class="box" id = "a32"></div>
 
         <div id="buttonBox">
                 <a class="button" id="submitQuiz">Submit</a>
         </div>
-
     </div>
+
+
     <script type="text/javascript">
         var quizAnswerArray = [];
         var selected1 = false;
