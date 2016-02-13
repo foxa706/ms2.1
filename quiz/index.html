@@ -333,12 +333,12 @@ $("#a4").click(function(){
     }
 });
 
- //What's your ideal Sunday? in=Indoorsy ou=Outdoorsy-------------------------------------------------------------------------------------------------
+ //What's your ideal Sunday? H=Indoorsy O=Outdoorsy-------------------------------------------------------------------------------------------------
  $("#a9").click(function(){
     selected9 =! selected9;
     if(selected9){
         $(this).css({"border" : "solid 2px blue"});
-        var ans = "in";
+        var ans = "H";
         console.log("answered: " + ans);
         saveAnswer(ans);
     }else{
@@ -359,7 +359,7 @@ $("#a4").click(function(){
     selected11 =! selected11;
     if(selected11){
         $(this).css({"border" : "solid 2px blue"});
-        var ans = "ou";
+        var ans = "O";
         console.log("answered: " + ans);
         saveAnswer(ans);
     }else{
@@ -467,7 +467,7 @@ $("#a16").click(function(){
     selected21 =! selected21;
     if(selected21){
         $(this).css({"border" : "solid 2px blue"});
-        var ans = "-i";//couch potato
+        var ans = "-h";//nocouch potato
         console.log("answered: " + ans);
         saveAnswer(ans);
     }else{
@@ -566,21 +566,24 @@ $("#a28").click(function(){
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
-});        $("#a30").click(function(){
+});
+ $("#a30").click(function(){
     selected30 =! selected30;
     if(selected30){
         $(this).css({"border" : "solid 2px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
-});        $("#a31").click(function(){
+});
+ $("#a31").click(function(){
     selected31 =! selected31;
     if(selected31){
         $(this).css({"border" : "solid 2px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
-});        $("#a32").click(function(){
+});
+ $("#a32").click(function(){
     selected32 =! selected32;
     if(selected32){
         $(this).css({"border" : "solid 2px blue"});

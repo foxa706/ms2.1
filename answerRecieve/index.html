@@ -50,11 +50,23 @@
          * @param  {String} name    Holds name of the subscription feed channel
          * @param  {Boolean} value  Holds value received from the subscription feed
          */
+    var quizAnswerArray = [];
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    var saveAnswer = function(ans){
+        var responseId = getRandomInt(0,300);
+        quizAnswerArray.push("   "+ responseId+" : "+ans+"   ");
+        console.log("answers: " + quizAnswerArray);
+        var x = quizAnswerArray.toString()
+        $("#msg_received").text(x);
+    }
         function onStringMessage( string, result ){
             console.log("[onStringMessage] string message received " + result );
             if (result) {
-                document.body.style.background = "rgb(100,255,100)";
+                document.body.style.background = "rgb(250,255,200)";
                 console.log(result);
+                saveAnswer(result);
             } else {
                 document.body.style.background = "rgb(255, 255, 255)";
             }
@@ -65,6 +77,12 @@
 <body>
     <div id="titleBox">
         <h1 id = "title">Smellfie Answers</h1>
+        <span id="status"/>
+         <h2 id="answerBlock">
+            <b>Answer log: </b>
+        <span id="msg_received"/>
+        </h2>
+
 
 </body>
 </html>
