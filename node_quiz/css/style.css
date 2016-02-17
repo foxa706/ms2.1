@@ -1,0 +1,158 @@
+body {
+   padding: 20px;
+   font: 18px/145% "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   background-image: url("http://s21.postimg.org/yklapqnjr/hint1.png");
+   background-size: cover;
+   background-color: rgba(255,255,255,0.8);
+}
+
+a, a:link, a:visited {
+   text-decoration: none;
+}
+
+h1{
+   text-align: center;
+}
+
+h2 {
+   text-align: center;
+
+}
+#titleBox{
+   position: absolute;
+   padding-top: 20px;
+   width:700px;
+   height:2040px;
+   left: calc(50% - 330px);
+}
+
+ #title {
+   color: black;
+ }
+
+.questionContainer {
+   position: relative;
+   padding-top: 20px;
+   width:700px;
+   height:700px;
+   top: 100px;
+   left: calc(50% - 330px);
+}
+
+
+.question {
+   color: black;
+}
+#q1{
+      /*background-color: green;*/
+}
+
+#q2{
+   margin-top: 450px;
+   /*background-color: blue;
+*/   margin-left: -20px;
+}
+#q3{
+   margin-top: 450px;
+   /*background-color: purple;*/
+   margin-left: -20px;
+}
+#q4{
+   margin-top: 450px;
+   /*background-color: red;
+ */  margin-left: -20px;
+}
+#q5{
+   margin-top: 450px;
+   /*background-color: lightblue;*/
+   margin-left: -20px;
+}
+#q6{
+   margin-top: 450px;
+   /*background-color: pink;*/
+   margin-left: -20px;
+}
+#q7{
+   margin-top: 450px;
+   /*background-color: teal;*/
+   margin-left: -20px;
+}
+#q8{
+   margin-top: 450px;
+   /*background-color: orange;*/
+   margin-left: -20px;
+}
+#q9{
+   margin-top: 450px;
+   /*background-color: gray;*/
+ margin-left: -20px;
+}
+#q10{
+   margin-top: 200px;
+   /*background-color: green;*/
+   margin-left: -20px;
+}
+
+
+.answerGrid {
+   position: absolute;
+   width: 660px;
+   height: 2000px;
+   top: 100px;
+   left: calc(50% - 330px);
+   z-index: 0;
+}
+
+
+.box{
+   white-space: nowrap;
+   overflow: hidden;
+   display: inline-block;
+   position: relative;
+   width: 300px;
+   height: 125px;
+   margin: 12.5px;
+   text-align: center;
+   padding: 75px 0 0 0;
+   border: solid 1px black;
+   background-color:white;
+}
+.box:hover {
+   border: solid 1px rgb(218,69,152);
+}
+
+/*#a29{
+   font-size: 30pt;
+}
+#a30{
+   font-size: 30pt;
+}
+#a31{
+   font-size: 30pt;
+}
+#a32{
+   font-size: 30pt;
+}*/
+
+#buttonBox{
+   margin-top:50px;
+   padding-top: 20px;
+   width:700px;
+   height:25px;
+
+}
+
+.button {
+   position: relative;
+   width:30px;
+   height:20px;
+   padding: 5px;
+   margin-left: calc(50% - 50px);
+   text-align: center;
+   cursor: pointer;
+   border: solid 1px black;
+
+}
+.button:hover {
+  border: solid 2px rgb(218,69,152);
+}
