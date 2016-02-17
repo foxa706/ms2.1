@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
         <head>
-    <title>Smellfie Quiz</title>
+    <title>HINT</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
@@ -93,7 +93,7 @@
 </head>
 <body>
     <div id="titleBox">
-        <h1 id = "title">Smellfie Quiz</h1>
+        <h1 id = "title">HINT QUIZ</h1>
     </div>
 
     <div class="questionContainer" id = "q1">
@@ -193,6 +193,7 @@
 
         <div id="buttonBox">
                 <a class="button" id="submitQuiz">Submit</a>
+                <h2 id="sent"></h2>
         </div>
     </div>
 
@@ -249,7 +250,7 @@
 $("#a1").click(function(){
     selected1 =! selected1;
     if(selected1){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "C";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -262,7 +263,7 @@ $("#a1").click(function(){
 $("#a2").click(function(){
     selected2 =! selected2;
     if(selected2){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -270,7 +271,7 @@ $("#a2").click(function(){
 $("#a3").click(function(){
     selected3 =! selected3;
     if(selected3){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -278,7 +279,7 @@ $("#a3").click(function(){
 $("#a4").click(function(){
     selected4 =! selected4;
     if(selected4){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "S";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -292,7 +293,7 @@ $("#a4").click(function(){
  $("#a5").click(function(){
     selected5 =! selected5;
     if(selected5){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -300,7 +301,7 @@ $("#a4").click(function(){
  $("#a6").click(function(){
     selected6 =! selected6;
     if(selected6){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "R";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -313,7 +314,7 @@ $("#a4").click(function(){
  $("#a7").click(function(){
     selected7 =! selected7;
     if(selected7){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "X";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -326,7 +327,7 @@ $("#a4").click(function(){
  $("#a8").click(function(){
     selected8 =! selected8;
     if(selected8){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -336,7 +337,7 @@ $("#a4").click(function(){
  $("#a9").click(function(){
     selected9 =! selected9;
     if(selected9){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "H";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -349,7 +350,7 @@ $("#a4").click(function(){
  $("#a10").click(function(){
     selected10 =! selected10;
     if(selected10){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -357,7 +358,7 @@ $("#a4").click(function(){
  $("#a11").click(function(){
     selected11 =! selected11;
     if(selected11){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "O";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -370,7 +371,7 @@ $("#a4").click(function(){
  $("#a12").click(function(){
     selected12 =! selected12;
     if(selected12){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -379,7 +380,7 @@ $("#a4").click(function(){
 $("#a13").click(function(){
     selected13 =! selected13;
     if(selected13){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "N";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -392,7 +393,7 @@ $("#a13").click(function(){
 $("#a14").click(function(){
     selected14 =! selected14;
     if(selected14){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -400,7 +401,7 @@ $("#a14").click(function(){
 $("#a15").click(function(){
     selected15 =! selected15;
     if(selected15){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -408,7 +409,7 @@ $("#a15").click(function(){
 $("#a16").click(function(){
     selected16 =! selected16;
     if(selected16){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "D";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -422,7 +423,7 @@ $("#a16").click(function(){
   $("#a17").click(function(){
     selected17 =! selected17;
     if(selected17){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -430,7 +431,7 @@ $("#a16").click(function(){
   $("#a18").click(function(){
     selected18 =! selected18;
     if(selected18){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "I";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -443,7 +444,7 @@ $("#a16").click(function(){
   $("#a19").click(function(){
     selected19 =! selected19;
     if(selected19){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -451,7 +452,7 @@ $("#a16").click(function(){
   $("#a20").click(function(){
     selected20 =! selected20;
     if(selected20){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "R";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -465,7 +466,7 @@ $("#a16").click(function(){
   $("#a21").click(function(){
     selected21 =! selected21;
     if(selected21){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "-h";//nocouch potato
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -478,7 +479,7 @@ $("#a16").click(function(){
   $("#a22").click(function(){
     selected22 =! selected22;
     if(selected22){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "-n";//smothering
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -491,7 +492,7 @@ $("#a16").click(function(){
   $("#a23").click(function(){
     selected23 =! selected23;
     if(selected23){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -499,7 +500,7 @@ $("#a16").click(function(){
   $("#a24").click(function(){
     selected2 =! selected2;
     if(selected2){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -508,7 +509,7 @@ $("#a16").click(function(){
 $("#a25").click(function(){
     selected25 =! selected25
     if(selected25){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "c";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -521,7 +522,7 @@ $("#a25").click(function(){
 $("#a26").click(function(){
     selected26 =! selected26;
     if(selected26){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "n";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -534,7 +535,7 @@ $("#a26").click(function(){
 $("#a27").click(function(){
     selected27 =! selected27;
     if(selected27){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "r";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -547,7 +548,7 @@ $("#a27").click(function(){
 $("#a28").click(function(){
     selected28 =! selected28;
     if(selected28){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "o";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -561,7 +562,7 @@ $("#a28").click(function(){
   $("#a29").click(function(){
     selected29 =! selected29;
     if(selected29){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -569,7 +570,7 @@ $("#a28").click(function(){
  $("#a30").click(function(){
     selected30 =! selected30;
     if(selected30){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -577,7 +578,7 @@ $("#a28").click(function(){
  $("#a31").click(function(){
     selected31 =! selected31;
     if(selected31){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -585,7 +586,7 @@ $("#a28").click(function(){
  $("#a32").click(function(){
     selected32 =! selected32;
     if(selected32){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
     }else{
         $(this).css({"border" : "solid 1px black"});
     }
@@ -594,7 +595,7 @@ $("#a28").click(function(){
 $("#a33").click(function(){
     selected33 =! selected33;
     if(selected33){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "F";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -607,7 +608,7 @@ $("#a33").click(function(){
 $("#a34").click(function(){
     selected34 =! selected34;
     if(selected34){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "M";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -620,7 +621,7 @@ $("#a34").click(function(){
 $("#a35").click(function(){
     selected35 =! selected35;
     if(selected35){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "f";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -633,7 +634,7 @@ $("#a35").click(function(){
 $("#a36").click(function(){
     selected36 =! selected36;
     if(selected36){
-        $(this).css({"border" : "solid 2px blue"});
+        $(this).css({"border" : "solid 1px blue"});
         var ans = "m";
         console.log("answered: " + ans);
         saveAnswer(ans);
@@ -645,7 +646,10 @@ $("#a36").click(function(){
 });
 
 $("#submitQuiz").click(function(){
+    $(this).css({"background-color" : "lightgray"});
+    $(this).html( "~ Sent ~" );
     console.log( 'Quiz submitted ' + quizAnswerArray.toString());
+
 });
     </script>
 </body>

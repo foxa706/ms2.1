@@ -1,6 +1,6 @@
 body {
    padding: 20px;
-   font: 14px/145% "Helvetica Neue", Helvetica, Arial, Sans-serif;
+   font: 18px/145% "Helvetica Neue", Helvetica, Arial, Sans-serif;
    background: #eeeeee;
 }
 
@@ -25,7 +25,7 @@ h2 {
 }
 
  #title {
-
+   color: rgb(0,173,157);
  }
 
 .questionContainer {
@@ -39,57 +39,58 @@ h2 {
 
 
 .question {
-
+   color: rgb(25,80,163);
 }
 #q1{
-      background-color: green;
+      /*background-color: green;*/
 }
 
 #q2{
    margin-top: 450px;
-   background-color: blue;
-   margin-left: -20px;
+   /*background-color: blue;
+*/   margin-left: -20px;
 }
 #q3{
    margin-top: 450px;
-   background-color: purple;
+   /*background-color: purple;*/
    margin-left: -20px;
 }
 #q4{
    margin-top: 450px;
-   background-color: red;
-   margin-left: -20px;
+   /*background-color: red;
+ */  margin-left: -20px;
 }
 #q5{
    margin-top: 450px;
-   background-color: lightblue;
+   /*background-color: lightblue;*/
    margin-left: -20px;
 }
 #q6{
    margin-top: 450px;
-   background-color: pink;
+   /*background-color: pink;*/
    margin-left: -20px;
 }
 #q7{
    margin-top: 450px;
-   background-color: teal;
+   /*background-color: teal;*/
    margin-left: -20px;
 }
 #q8{
    margin-top: 450px;
-   background-color: orange;
+   /*background-color: orange;*/
    margin-left: -20px;
 }
 #q9{
    margin-top: 450px;
-   background-color: gray;
-   margin-left: -20px;
+   /*background-color: gray;*/
+ margin-left: -20px;
 }
 #q10{
    margin-top: 200px;
-   background-color: green;
+   /*background-color: green;*/
    margin-left: -20px;
 }
+
 
 .answerGrid {
    position: absolute;
@@ -102,6 +103,8 @@ h2 {
 
 
 .box{
+   white-space: nowrap;
+   overflow: hidden;
    display: inline-block;
    position: relative;
    width: 300px;
@@ -110,20 +113,24 @@ h2 {
    text-align: center;
    padding: 75px 0 0 0;
    border: solid 1px black;
-   background-color:lightblue;
+   background-color:white;
 }
 .box:hover {
-   border: solid 2px lightgray;
+   border: solid 1px rgb(218,69,152);
 }
 
-#a1{
+/*#a29{
+   font-size: 30pt;
 }
-#a2{
+#a30{
+   font-size: 30pt;
 }
-#a3{
+#a31{
+   font-size: 30pt;
 }
-#a1{
-}
+#a32{
+   font-size: 30pt;
+}*/
 
 #buttonBox{
    margin-top:50px;
@@ -145,8 +152,5 @@ h2 {
 
 }
 .button:hover {
-   color: blue;
-}
-.button:active {
-
+  border: solid 2px rgb(218,69,152);
 }
